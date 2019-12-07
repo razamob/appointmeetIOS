@@ -1,13 +1,10 @@
 //
 //  AppDelegate.swift
-//  Flash Chat
 //
-//  The App Delegate listens for events from the system. 
-//  It recieves application level messages like did the app finish launching or did it terminate etc. 
 //
 
 import UIKit
-
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //TODO: Initialise and Configure your Firebase here:
         
+        FirebaseApp.configure()
         
+        let  myDB = Database.database().reference()
+        myDB.setValue("Data Initialized")
         return true
     }
 
