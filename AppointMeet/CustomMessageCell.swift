@@ -1,5 +1,5 @@
 //Completed By Mobeen Raza
-// Used from London App Brewery
+// MessageCell.xib file was used from London App Brewery to design individual cell
 
 import UIKit
 
