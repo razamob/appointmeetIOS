@@ -14,6 +14,10 @@ class DoctorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var docRef : DatabaseReference!
     @IBOutlet var tbDoctors : UITableView!
     var DoctorsList = [DoctorModel]()
+    var nameToPass = ""
+    @IBAction func unwindToDoctorsVC (sender: UIStoryboardSegue){
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +63,26 @@ class DoctorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.nameToPass = DoctorsList[indexPath.row].Name!
+        
+        performSegue(withIdentifier: "AptSegue", sender: self)
+     
+ 
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "AptSegue"){
+            var vc = segue.destination as! BookingViewController
+            vc.docName = self.nameToPass
+        }
+         
+     }
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation

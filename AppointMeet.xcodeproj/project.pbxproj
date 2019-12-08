@@ -11,6 +11,7 @@
 		21C691F5239C8CA000DB12E5 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */; };
 		21C691F7239C8CBE00DB12E5 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */; };
 		21C691FA239C902B00DB12E5 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F9239C902B00DB12E5 /* DoctorModel.swift */; };
+		21C691FC239CB56200DB12E5 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691FB239CB56200DB12E5 /* BookingViewController.swift */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -32,6 +33,7 @@
 		21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
 		21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
 		21C691F9239C902B00DB12E5 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		21C691FB239CB56200DB12E5 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		47C117470598CA3D320F448B /* Pods-AppointMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointMeet.debug.xcconfig"; path = "Target Support Files/Pods-AppointMeet/Pods-AppointMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		6321A9B61B94EBA10053D2E7 /* AppointMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				CCD3C1AB239AFC2300C9C441 /* OptionsViewController.swift */,
 				21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */,
 				21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */,
+				21C691FB239CB56200DB12E5 /* BookingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */,
 				63E28B2F1B9A337600FBF6E0 /* AppDelegate.swift in Sources */,
 				63E28B301B9A337600FBF6E0 /* ChatViewController.swift in Sources */,
+				21C691FC239CB56200DB12E5 /* BookingViewController.swift in Sources */,
 				21C691FA239C902B00DB12E5 /* DoctorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
