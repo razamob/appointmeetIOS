@@ -1,16 +1,10 @@
-//
 //  LogInViewController.swift
-//  Flash Chat
-//
-//  This is the view controller where users login
-
-
+//  Completed By Mobeen Raza
 import UIKit
 import Firebase
 
 class LogInViewController: UIViewController {
 
-    //Textfields pre-linked with IBOutlets
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     

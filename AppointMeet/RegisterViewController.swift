@@ -1,14 +1,10 @@
-//
-//  This is the View Controller which registers new users with Firebase
-//
+//  View Controller which registers new users with Firebase
+// Completed By Mobeen Raza
 
 import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController {
-
-    
-    //Pre-linked IBOutlets
 
     @IBOutlet var emailText: UITextField!
     @IBOutlet var passwordText: UITextField!
