@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C691F3239C8A9D00DB12E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C691F2239C8A9D00DB12E5 /* GoogleService-Info.plist */; };
+		21C691F5239C8CA000DB12E5 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */; };
+		21C691F7239C8CBE00DB12E5 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */; };
+		21C691FA239C902B00DB12E5 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F9239C902B00DB12E5 /* DoctorModel.swift */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -18,13 +22,16 @@
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
 		CCD3C1AC239AFC2300C9C441 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3C1AB239AFC2300C9C441 /* OptionsViewController.swift */; };
-		CCD3C1AE239AFFF300C9C441 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCD3C1AD239AFFF300C9C441 /* GoogleService-Info.plist */; };
 		CCD3C1B0239B43F000C9C441 /* Launch-Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD3C1AF239B43F000C9C441 /* Launch-Screen.storyboard */; };
 		E1567762F214C3B50453FFC1 /* Pods_AppointMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0012844FB833B663A6381E90 /* Pods_AppointMeet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0012844FB833B663A6381E90 /* Pods_AppointMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppointMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C691F2239C8A9D00DB12E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		21C691F9239C902B00DB12E5 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
 		47C117470598CA3D320F448B /* Pods-AppointMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointMeet.debug.xcconfig"; path = "Target Support Files/Pods-AppointMeet/Pods-AppointMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		6321A9B61B94EBA10053D2E7 /* AppointMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +47,6 @@
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CCD14BC5239A21110029CA06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCD3C1AB239AFC2300C9C441 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		CCD3C1AD239AFFF300C9C441 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCD3C1AF239B43F000C9C441 /* Launch-Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch-Screen.storyboard"; sourceTree = "<group>"; };
 		E09734ABCBCF84C4B5168D48 /* Pods-AppointMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointMeet.release.xcconfig"; path = "Target Support Files/Pods-AppointMeet/Pods-AppointMeet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C691F8239C901400DB12E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21C691F9239C902B00DB12E5 /* DoctorModel.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		4106FD9821DAA365F6203418 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,7 @@
 		6321A9B81B94EBA10053D2E7 /* AppointMeet */ = {
 			isa = PBXGroup;
 			children = (
+				21C691F8239C901400DB12E5 /* Classes */,
 				6321A9EE1B94EC360053D2E7 /* Model */,
 				6321A9EB1B94EC170053D2E7 /* View */,
 				6321A9EA1B94EC0A0053D2E7 /* Controller */,
@@ -108,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD14BC5239A21110029CA06 /* GoogleService-Info.plist */,
-				CCD3C1AD239AFFF300C9C441 /* GoogleService-Info.plist */,
+				21C691F2239C8A9D00DB12E5 /* GoogleService-Info.plist */,
 				6321A9BA1B94EBA10053D2E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -132,6 +147,8 @@
 				63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */,
 				63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */,
 				CCD3C1AB239AFC2300C9C441 /* OptionsViewController.swift */,
+				21C691F4239C8CA000DB12E5 /* DoctorTableViewCell.swift */,
+				21C691F6239C8CBE00DB12E5 /* DoctorViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -220,9 +237,9 @@
 			files = (
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
-				CCD3C1AE239AFFF300C9C441 /* GoogleService-Info.plist in Resources */,
 				CCD3C1B0239B43F000C9C441 /* Launch-Screen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
+				21C691F3239C8A9D00DB12E5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +300,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */,
+				21C691F7239C8CBE00DB12E5 /* DoctorViewController.swift in Sources */,
 				CCD3C1AC239AFC2300C9C441 /* OptionsViewController.swift in Sources */,
 				63E28B251B9A335300FBF6E0 /* Message.swift in Sources */,
 				6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */,
 				63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */,
+				21C691F5239C8CA000DB12E5 /* DoctorTableViewCell.swift in Sources */,
 				63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */,
 				63E28B2F1B9A337600FBF6E0 /* AppDelegate.swift in Sources */,
 				63E28B301B9A337600FBF6E0 /* ChatViewController.swift in Sources */,
+				21C691FA239C902B00DB12E5 /* DoctorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +419,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47C117470598CA3D320F448B /* Pods-AppointMeet.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -421,7 +440,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E09734ABCBCF84C4B5168D48 /* Pods-AppointMeet.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
