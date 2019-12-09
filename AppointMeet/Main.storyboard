@@ -512,6 +512,10 @@
                                 <rect key="frame" x="0.0" y="263" width="375" height="235"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="alD-4k-hxg" id="8Px-i1-5F9"/>
+                                    <outlet property="delegate" destination="alD-4k-hxg" id="hXz-hg-1m9"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bet-Dt-8kM">
                                 <rect key="frame" x="152" y="135" width="71" height="36"/>
@@ -524,6 +528,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <connections>
+                        <outlet property="appointmentPicker" destination="fdV-Wd-vYE" id="xGy-iz-9Li"/>
                         <outlet property="lblName" destination="Bet-Dt-8kM" id="MfG-yr-xra"/>
                     </connections>
                 </viewController>
