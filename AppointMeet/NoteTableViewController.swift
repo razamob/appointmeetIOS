@@ -2,8 +2,7 @@
 //  NoteTableViewController.swift
 //  AppointMeet
 //
-//  Created by Sneh Patel on 2019-12-09.
-//  Copyright © 2019 Mobeen Raza. All rights reserved.
+// by sneh patel
 //
 
 import UIKit

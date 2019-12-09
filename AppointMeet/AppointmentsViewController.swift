@@ -2,8 +2,7 @@
 //  AppointmentsViewController.swift
 //  AppointMeet
 //
-//  Created by shuayb on 2019-12-09.
-//  Copyright © 2019 Mobeen Raza. All rights reserved.
+//  by shuayb badoolah
 //
 
 import UIKit
