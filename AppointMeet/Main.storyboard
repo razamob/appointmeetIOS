@@ -222,9 +222,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-TS-RIc">
-                                <rect key="frame" x="0.0" y="413" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="420" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.15799340610000001" green="0.78705894949999999" blue="0.32603177430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Notes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -672,6 +672,9 @@
                                 <state key="normal" title="Book">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="BookAppointment" destination="alD-4k-hxg" eventType="touchUpInside" id="Cdo-aW-Jlt"/>
+                                </connections>
                             </button>
                             <pickerView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdV-Wd-vYE">
                                 <rect key="frame" x="0.0" y="263" width="375" height="235"/>
@@ -689,11 +692,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-7u-uT7">
+                                <rect key="frame" x="16" y="204" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <connections>
                         <outlet property="appointmentPicker" destination="fdV-Wd-vYE" id="xGy-iz-9Li"/>
+                        <outlet property="lblBooking" destination="Oh2-7u-uT7" id="g8L-sK-v9e"/>
                         <outlet property="lblName" destination="Bet-Dt-8kM" id="MfG-yr-xra"/>
                     </connections>
                 </viewController>
