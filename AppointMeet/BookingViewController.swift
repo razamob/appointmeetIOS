@@ -53,7 +53,7 @@ class BookingViewController: UIViewController , UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func BookAppointment(){
-        lblBooking.text = selectedRow
+        lblBooking.text = ("Booked Appointment with " + selectedRow)
        }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
