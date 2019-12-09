@@ -12,7 +12,9 @@
 		21C691FA239C902B00DB12E5 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691F9239C902B00DB12E5 /* DoctorModel.swift */; };
 		21C691FC239CB56200DB12E5 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691FB239CB56200DB12E5 /* BookingViewController.swift */; };
 		21C691FE239DC51E00DB12E5 /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C691FD239DC51E00DB12E5 /* AppointmentModel.swift */; };
-		3F40BAAD239E0CC300796E7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F40BAAC239E0CC300796E7B /* GoogleService-Info.plist */; };
+		21C6920C239E4E5F00DB12E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C6920B239E4E5E00DB12E5 /* GoogleService-Info.plist */; };
+		21C6920E239E4F3800DB12E5 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6920D239E4F3800DB12E5 /* AppointmentsViewController.swift */; };
+		21C69210239E4F7100DB12E5 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6920F239E4F7100DB12E5 /* BookingModel.swift */; };
 		3F40BAB5239E2AE300796E7B /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40BAB4239E2AE300796E7B /* NoteTableViewController.swift */; };
 		3F40BAB7239E2EA300796E7B /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40BAB6239E2EA300796E7B /* NotesViewController.swift */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
@@ -37,7 +39,9 @@
 		21C691F9239C902B00DB12E5 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
 		21C691FB239CB56200DB12E5 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		21C691FD239DC51E00DB12E5 /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
-		3F40BAAC239E0CC300796E7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21C6920B239E4E5E00DB12E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21C6920D239E4F3800DB12E5 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		21C6920F239E4F7100DB12E5 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
 		3F40BAB4239E2AE300796E7B /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		3F40BAB6239E2EA300796E7B /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		47C117470598CA3D320F448B /* Pods-AppointMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointMeet.debug.xcconfig"; path = "Target Support Files/Pods-AppointMeet/Pods-AppointMeet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			children = (
 				21C691F9239C902B00DB12E5 /* DoctorModel.swift */,
 				21C691FD239DC51E00DB12E5 /* AppointmentModel.swift */,
+				21C6920F239E4F7100DB12E5 /* BookingModel.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -132,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD14BC5239A21110029CA06 /* GoogleService-Info.plist */,
-				3F40BAAC239E0CC300796E7B /* GoogleService-Info.plist */,
+				21C6920B239E4E5E00DB12E5 /* GoogleService-Info.plist */,
 				6321A9BA1B94EBA10053D2E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +166,7 @@
 				21C691FB239CB56200DB12E5 /* BookingViewController.swift */,
 				3F40BAB4239E2AE300796E7B /* NoteTableViewController.swift */,
 				3F40BAB6239E2EA300796E7B /* NotesViewController.swift */,
+				21C6920D239E4F3800DB12E5 /* AppointmentsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,7 +255,7 @@
 			files = (
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
-				3F40BAAD239E0CC300796E7B /* GoogleService-Info.plist in Resources */,
+				21C6920C239E4E5F00DB12E5 /* GoogleService-Info.plist in Resources */,
 				CCD3C1B0239B43F000C9C441 /* Launch-Screen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 			);
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */,
+				21C69210239E4F7100DB12E5 /* BookingModel.swift in Sources */,
 				21C691F7239C8CBE00DB12E5 /* DoctorViewController.swift in Sources */,
 				CCD3C1AC239AFC2300C9C441 /* OptionsViewController.swift in Sources */,
 				63E28B251B9A335300FBF6E0 /* Message.swift in Sources */,
@@ -319,6 +326,7 @@
 				63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */,
 				21C691F5239C8CA000DB12E5 /* DoctorTableViewCell.swift in Sources */,
 				3F40BAB5239E2AE300796E7B /* NoteTableViewController.swift in Sources */,
+				21C6920E239E4F3800DB12E5 /* AppointmentsViewController.swift in Sources */,
 				63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */,
 				63E28B2F1B9A337600FBF6E0 /* AppDelegate.swift in Sources */,
 				21C691FE239DC51E00DB12E5 /* AppointmentModel.swift in Sources */,
