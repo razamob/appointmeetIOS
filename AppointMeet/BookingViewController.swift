@@ -13,8 +13,12 @@ class BookingViewController: UIViewController , UIPickerViewDelegate, UIPickerVi
     var docName = ""
     @IBOutlet var lblName : UILabel!
     @IBOutlet var appointmentPicker : UIPickerView!
+    @IBOutlet var lblBooking : UILabel!
+    var selectedRow = ""
     var AptRef : DatabaseQuery!
     var AptList = [AppointmentModel]()
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,14 @@ class BookingViewController: UIViewController , UIPickerViewDelegate, UIPickerVi
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedRow = self.title!
+    }
+    
+    @IBAction func BookAppointment(){
+        lblBooking.text = selectedRow
+       }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return AptList.count
