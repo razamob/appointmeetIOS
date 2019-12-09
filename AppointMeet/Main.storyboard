@@ -218,6 +218,18 @@
                                     <segue destination="vXZ-lx-hvc" kind="push" id="1PO-gC-s2u"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-TS-RIc">
+                                <rect key="frame" x="0.0" y="413" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Notes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="atE-pv-Ecz" kind="push" id="fjv-e8-b0m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
@@ -394,6 +406,72 @@
             </objects>
             <point key="canvasLocation" x="3031" y="-36"/>
         </scene>
+        <!--Notes-->
+        <scene sceneID="kfV-Sx-AFb">
+            <objects>
+                <tableViewController id="atE-pv-Ecz" customClass="NoteTableViewController" customModule="AppointMeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O98-st-Vb4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CELL" id="ST1-NN-Ef8">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ST1-NN-Ef8" id="dpi-BE-b32">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="atE-pv-Ecz" id="TlL-OD-5M6"/>
+                            <outlet property="delegate" destination="atE-pv-Ecz" id="QQJ-DE-tAJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notes" id="OfR-z2-VIc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7OK-Oo-bQs">
+                            <connections>
+                                <action selector="newNote" destination="atE-pv-Ecz" id="uHB-Vi-KQz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="LDb-zh-8ge" kind="push" identifier="showEditorSegue" id="S7q-6o-bgD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksv-AJ-aad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908" y="-40"/>
+        </scene>
+        <!--Edit Note-->
+        <scene sceneID="QJv-ZP-BPp">
+            <objects>
+                <viewController id="LDb-zh-8ge" customClass="NotesViewController" customModule="AppointMeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="e8x-gG-kuU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <navigationItem key="navigationItem" title="Edit Note" id="R6u-lA-0Bc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="GxL-WB-CEN">
+                            <connections>
+                                <action selector="doneEditingBody" destination="LDb-zh-8ge" id="3vt-n0-F9S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnDoneEditing" destination="GxL-WB-CEN" id="XfG-iD-7qU"/>
+                        <outlet property="txtBody" destination="e8x-gG-kuU" id="h7L-aM-3xi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHI-ZZ-faf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4799" y="-62"/>
+        </scene>
         <!--Doctor View Controller-->
         <scene sceneID="rPj-rx-YmD">
             <objects>
@@ -555,7 +633,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nv2-mt-Fbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484.05797101449281" y="8.0357142857142847"/>
+            <point key="canvasLocation" x="-610" y="8"/>
         </scene>
     </scenes>
     <resources>
